@@ -1,25 +1,17 @@
-**Overview**<br>
+## **Overview**<br>
 This repository contains code associated with "Functional analysis of O-GlcNAcylation by networking of OGT interactors and substrates" by Griffin ME, Thompson JW, et al.
 
-**License**<br>
-MIT License
+It includes our novel algorithms for parsimonious enumeration of PTMs in mass spectrometry data (see Extended Data Figure 2. Main Text, and Methods):<br>
+SiteAndRegions.py<br>
+SitesAndRegionsMultiExperiment.py (includes the additional option to separate conditions/replicates)<br>
 
-Copyright (c) 2024 John Thompson and Michael Sweredoski
+It also includes Jupyter Notebooks:<br>
+Adaptor Protein Ranking.ipynb (used to rank potential hub proteins)<br>
+Network Generation.ipynb (used to make OGT substrate and interactor networks) <br>
+Sites and Regions Analysis.ipynb (used to quantify and localize O-GlcNAc sites with the algorithm above)<br>S
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## **System Requirements**<br>
+All code has been test
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## **License**<br>
+This project is covered under the MIT License
