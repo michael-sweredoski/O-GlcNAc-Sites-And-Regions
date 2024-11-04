@@ -25,7 +25,7 @@
 # Determines the most parsimonious number of PTM sites and regions, along with their localization, that can explain given mass spectrometry data
 
 # Functional analysis of O-GlcNAcylation by networking of OGT interactors and substrates
-# Griffin ME, Thompson JW et al. 
+# Griffin ME, Thompson JW, et al. 
 
 # ASSUME INPUT TABLE HAS THE FOLLOWING COLUMNS EXACTLY NAMED: "RawFile", "Protein", "ScanNumber", "NumMods", "Positions" (semicolon separated), "Probabilities" (semicolon separated)
 
