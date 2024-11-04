@@ -1,13 +1,31 @@
-#Updated 5/27/2019 by John Thompson
-#Bug fixed 5/29/2109 Mike Sweredoski
-#Script is working in both python 2 and python 3 (5/30/2019)
-#Updated by Mike Sweredoski to give a region ID to match best sites with their region (8/8/2019)
-#Updated to run on generic output on 1/24/2020 by Mike Sweredoski (also assuming each site matches to its master protein)
-#Other updates by Mike Sweredoski (1/24/2020 and ff) for quantitative glycomics, will group HCD/ETD/EThcD together, pick the best score and match it with corresponding MS3 (i.e. for SPS methods)
-#Updated 1/28/2020 by John Thompson
-#Bug fixed 2/4/2020 by John Thompson
-#The script can now be called from an ipython noteboook and inputs outputs fully specified as system arguments (John Thompson 2/5/2020)
-#Fixed rounding error for peptides with 2 GlcNAcs (John Thompson 4/9/2020)
+# MIT License
+
+# Copyright (c) 2020 Michael Sweredoski and John Thompson
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
+
+# Sites and Regions Algorithm
+# Determines the most parsimonious number of PTM sites and regions, along with their localization, that can explain given mass spectrometry data
+
+# Functional analysis of O-GlcNAcylation by networking of OGT interactors and substrates
+# Griffin ME, Thompson JW et al. 
 
 # ASSUME INPUT TABLE HAS THE FOLLOWING COLUMNS EXACTLY NAMED: "RawFile", "Protein", "ScanNumber", "NumMods", "Positions" (semicolon separated), "Probabilities" (semicolon separated)
 
