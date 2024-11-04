@@ -20,7 +20,7 @@ This repository contains code associated with "Functional analysis of O-GlcNAcyl
 3. 293T_Preprocessed_2.txt (sample input derived from '293T_Glycomics_Full_PSMs.txt' for 'SitesAndRegionsMultiExperiment.py' as described in 'Sites and Regions Analysis.ipynb')<br>
 <br>
 
-#### Finally, sample output data is provided (see Sites and Regions Analysis.ipynb for how we used this data to determine the number of unique O-GlcNAc sites):<br>
+#### Finally, sample output data is provided (see 'Sites and Regions Analysis.ipynb' for how we used this data to determine the number of unique O-GlcNAc sites):<br>
 1. bestms2_293T.txt (best spectra for every site, from 'SiteAndRegions.py')<br>
 2. bestms2_293T_2.txt (best spectra for every site, from 'SitesAndRegionsMultiExperiment.py')<br>
 3. maxparcon_293T.txt (number of sites with maximum parsimony, from 'SiteAndRegions.py')<br>
@@ -55,6 +55,6 @@ Install time for Python and Anaconda varies based on network speed. Run time for
 <br>
 
 ## **License**<br>
-This project is licensed under the MIT License
+This project is licensed under the MIT License.
 <br>
 <br>
