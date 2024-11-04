@@ -20,6 +20,7 @@ This repository contains code associated with "Functional analysis of O-GlcNAcyl
 2. bestms2_293T_2.txt (best spectra for every site, from 'SitesAndRegionsMultiExperiment.py')<br>
 3. maxparcon_293T.txt (number of sites with maximum parsimony, from 'SiteAndRegions.py')<br>
 4. maxparcon_293T_2.txt (number of sites with maximum parsimony, from 'SitesAndRegionsMultiExperiment.py')<br>
+<br>
 
 > Columns in 'bestms2_293T.txt' and 'bestms2_293T_2.txt':<br>
 > 1. Protein: Uniprot accession<br>
@@ -29,6 +30,7 @@ This repository contains code associated with "Functional analysis of O-GlcNAcyl
 > 5. Best Raw File: raw file corresponding to the best probability<br>
 > 6. Best Scan: scan file corresponding to the best probability<br>
 > 7. Region ID: unique ID to map back to the maxparcon_293T.txt file<br>
+<br>
 
 > Columns in 'maxparcon_293T.txt' and 'maxparcon_293T_2.txt' are the same:<br>
 > 1. Protein: Uniprot accession<br>
