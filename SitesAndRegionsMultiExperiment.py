@@ -1,5 +1,32 @@
-#Created from SitesAndRegionsGeneric.py on 2/7/2020 (Mike Sweredoski and John Thompson)
-#Fixed rounding bug and updated script for consistency with SitesAndRegionsGeneric_3.py, see notes therein (John Thompson 4/9/2020)
+# MIT License
+
+# Copyright (c) 2020 Michael Sweredoski and John Thompson
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
+
+# Sites and Regions Multi-Experiment Algorithm
+# Determines the most parsimonious number of PTM sites and regions, along with their localization, that can explain given mass spectrometry data
+# This version includes the additional means to quantify sites from individual replicates or conditions through the use of an 'Experiment' identifier column in the input data
+
+# Functional analysis of O-GlcNAcylation by networking of OGT interactors and substrates
+# Griffin ME, Thompson JW et al. 
 
 ### ASSUME INPUT TABLE HAS THE FOLLOWING COLUMNS EXACTLY NAMED: "RawFile", "Experiment", "Protein", "ScanNumber", "NumMods", "Positions" (semicolon separated), "Probabilities" (semicolon separated)
 
