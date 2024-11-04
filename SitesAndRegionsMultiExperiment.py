@@ -26,7 +26,7 @@
 # This version includes the additional means to quantify sites from individual replicates or conditions through the use of an 'Experiment' identifier column in the input data
 
 # Functional analysis of O-GlcNAcylation by networking of OGT interactors and substrates
-# Griffin ME, Thompson JW et al. 
+# Griffin ME, Thompson JW, et al. 
 
 ### ASSUME INPUT TABLE HAS THE FOLLOWING COLUMNS EXACTLY NAMED: "RawFile", "Experiment", "Protein", "ScanNumber", "NumMods", "Positions" (semicolon separated), "Probabilities" (semicolon separated)
 
